@@ -1,0 +1,42 @@
+<div class="heading">
+    <div class="container">
+        <div class="Navbar" style="animation-delay:0.5s;transition: all 0.3s ease-in-out 0s;">
+            <img class="fadeInUp img-circle logo" alt="Covid19 Tracker" src="assets/images/heading4.png"
+                style="animation-delay: 0s; transition: all 0.3s ease-in-out 0s;">
+            <div class="navbar-left">
+                <a routerLink="/home" routerLinkActive="active">
+                    <span class="fadeInUp" style="animation-delay: 0.2s;">Home</span>
+                </a>
+                <a routerLink="/state" routerLinkActive="active">
+                    <span class="fadeInUp" style="animation-delay: 0.2s;">StateWise</span>
+                </a>
+                <a routerLink="/links" routerLinkActive="active">
+                    <span class="fadeInUp" style="animation-delay: 0.5s;">Helpful Links</span>
+                </a>
+                <a routerLink="/faq" routerLinkActive="active">
+                    <span class="fadeInUp" style="animation-delay: 0.6s;">faq</span>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="Banner fadeInUp" style="animation-delay: 0.2s;">
+        <div class="snippet" *ngIf="BannerData else noBanner">{{BannerData}} &nbsp;</div>
+        <ng-template #noBanner>
+            <div class="snippet">#BreakTheChain of unverified WhatsApp forwards which spread wrong information! Do not
+                forward unless you verify it.</div>
+        </ng-template>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+<footer>
+    <h5 class="text-center"
+        style="margin-bottom: 0;font-size: 11px;padding: 30px;color: rgb(65, 61, 61);font-weight:700;background-color: lavender;">
+        © Copyrights reserved by Manjunath Reddy
+    </h5>
+</footer>

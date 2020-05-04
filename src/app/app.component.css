@@ -1,0 +1,87 @@
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    height: 4.5rem;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-family: 900;
+    -webkit-animation-name: uf3b0818c;
+    animation-name: uf3b0818c;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.heading{
+    background: rgba(108, 117, 125, .0627451);
+}
+
+.Navbar img{
+    width: 4rem;
+    height: 4rem;
+    align-self: center;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.fadeInUp{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration:0.45s ;
+    animation-duration: 0.45s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.navbar-left{
+    margin-left: 2rem;
+    flex:1 1 ;
+    align-self: center;
+}
+
+.Navbar .navbar-left a{
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-right: 2rem;
+    color: rgba(108, 117, 125, .6);
+}
+
+.Navbar .navbar-left a span{
+    display: inline-block;
+    transition: color .2s ease-in-out;
+}
+
+.Navbar .focused,
+.Navbar .active,
+.Navbar .navbar-left a span:hover{
+    color:#6c757d !important;
+}
+
+.Banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(32, 26, 162, .866667);
+    background-color:rgba(32, 26, 162, .12549);
+}
+
+.Banner .snippet{
+    align-self: center;
+    width:calc(100% - 10rem);
+    word-wrap: break-word;
+    padding: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    -webkit-animation: fadeOut 1s;
+    animation:fadeOut 1s;
+    animation-fill-mode: forwards;
+}
